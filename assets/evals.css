@@ -1,0 +1,30 @@
+/* AI eval results page (ai-evals.html). Builds on styles.css + case.css tokens. Pure CSS bars, no JS. */
+.stats { list-style: none; padding: 0 !important; margin: 0 0 1.5rem; display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }
+.stats li { margin: 0 !important; max-width: none !important; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.9rem 1rem; }
+.stats .stat-n { display: block; font-size: 1.6rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.stats .stat-l { display: block; color: var(--muted); font-size: 0.875rem; }
+.t-evals { min-width: 36rem; }
+.t-evals td { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.t-evals td.bar-cell { width: 40%; min-width: 9rem; white-space: normal; vertical-align: middle; }
+.bar { position: relative; display: block; height: 0.9rem; border-radius: 4px; background: var(--bg); border: 1px solid var(--muted); overflow: hidden; }
+.bar .ci { position: absolute; top: 0; bottom: 0; left: var(--lo); right: calc(100% - var(--hi)); background: var(--accent-soft); }
+.bar .fill { position: absolute; top: 0.25rem; bottom: 0.25rem; left: 0; width: var(--p); background: var(--accent); border-radius: 2px; }
+.r-100-676 { --p: 100%; --lo: 67.6%; --hi: 100%; }
+.r-100-566 { --p: 100%; --lo: 56.6%; --hi: 100%; }
+.r-667-208 { --p: 66.7%; --lo: 20.8%; --hi: 93.9%; }
+.r-100-342 { --p: 100%; --lo: 34.2%; --hi: 100%; }
+.r-957-790 { --p: 95.7%; --lo: 79.0%; --hi: 99.2%; }
+.r-100-857 { --p: 100%; --lo: 85.7%; --hi: 100%; }
+.r-0-0 { --p: 0%; --lo: 0%; --hi: 14.3%; }
+.bar-key { color: var(--muted); font-size: 0.875rem; margin: -0.5rem 0 1.25rem; }
+.key { display: inline-block; width: 1.4rem; height: 0.6rem; border-radius: 2px; vertical-align: 0.05em; margin-right: 0.3rem; }
+.key-fill { background: var(--accent); }
+.key-ci { background: var(--accent-soft); border: 1px solid var(--muted); }
+.checks { margin: 0 0 1.25rem; display: grid; gap: 0.9rem; }
+@media (min-width: 40rem) { .checks { grid-template-columns: 10rem 1fr; gap: 0.9rem 1.5rem; } }
+.checks dt { font-weight: 600; }
+.checks dd { margin: 0; max-width: 40rem; }
+.failcase { border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 var(--radius) var(--radius) 0; background: var(--surface); padding: 1rem 1.1rem; margin: 0 0 1rem; max-width: 46rem; }
+.failcase p { margin: 0 0 0.6rem; }
+.failcase p:last-child { margin: 0; }
+.failcase pre { margin: 0 0 0.6rem; white-space: pre-wrap; overflow-wrap: anywhere; font: 0.85rem/1.5 var(--mono); background: var(--accent-soft); padding: 0.6rem 0.75rem; border-radius: 6px; }
