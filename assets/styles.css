@@ -102,7 +102,8 @@ p { margin: 0 0 1rem; }
 .card ul { margin: 0; padding-left: 1.1rem; color: var(--muted); font-size: 0.9375rem; }
 .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; padding: 0 !important; margin: 0; }
 .tags li { font: 500 0.78rem/1 var(--mono); padding: 0.35rem 0.5rem; border-radius: 6px; background: var(--accent-soft); color: var(--text); }
-.card-link { margin-top: auto; font-weight: 600; font-size: 0.9375rem; }
+.card-links { margin: auto 0 0 !important; display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; font-weight: 600; font-size: 0.9375rem; }
+.card-links a { display: inline-block; padding: 0.15rem 0; }
 .placeholder { color: var(--muted); font-style: italic; }
 
 .skills { display: grid; gap: 1.25rem; margin: 0; }
@@ -119,7 +120,6 @@ p { margin: 0 0 1rem; }
 .tagline { margin: 0 0 1rem; font-size: 1.0625rem; color: var(--text); max-width: 38rem; }
 .hero-more { margin: 1.25rem 0 0; font-size: 0.9375rem; }
 .role > p:last-child { margin: 0; }
-@media (min-width: 40rem) { .cards--single { grid-template-columns: 1fr; } }
 .creds { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.5rem; }
 .creds p { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.9375rem; }
 .single-line { margin: 0; }

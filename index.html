@@ -113,19 +113,50 @@
     </section>
 
     <!-- ===== FEATURED PROJECTS =====
-         Copy: N&B "Featured projects", trimmed. No CI badge; no test-report link (https://elpharz.github.io/toolshop-quality-suite/ returned 404 on 11 Oct 14:38 EAT). -->
+         One card per project: title, one-line description, 2-3 tags, link. No metrics beyond the toolshop test count, no CI badges,
+         no test-report link (https://elpharz.github.io/toolshop-quality-suite/ returned 404 on 11 Oct). Sources: README.md fact table. -->
     <section id="projects" aria-labelledby="projects-title">
       <div class="wrap">
-        <h2 id="projects-title">Featured project</h2>
-        <div class="cards cards--single">
+        <h2 id="projects-title">Featured projects</h2>
+        <div class="cards">
+          <!-- PROJECT: toolshop-quality-suite (Peter's own repo) -->
           <article class="card">
             <h3>toolshop-quality-suite</h3>
-            <p>An API-first Playwright + TypeScript framework for Toolshop, an open-source practice web shop. It has 29 tests, 20 of which hit the REST API directly. It covers auth, catalogue, cart and validation errors, with a smaller set of UI journeys that use the API for setup and cross-checks.</p>
-            <p>A GitHub Actions workflow runs strict TypeScript, ESLint and Prettier checks before the tests.</p>
+            <p>API-first Playwright + TypeScript test framework for Toolshop, an open-source practice web shop: 29 tests, 20 of them straight against the REST API.</p>
             <ul class="tags">
-              <li>Playwright</li><li>TypeScript</li><li>REST API</li><li>GitHub Actions</li>
+              <li>Playwright</li><li>TypeScript</li><li>REST API</li>
             </ul>
-            <a class="card-link" href="https://github.com/Elpharz/toolshop-quality-suite">Code on GitHub<span class="visually-hidden"> (toolshop-quality-suite)</span></a>
+            <p class="card-links"><a href="https://github.com/Elpharz/toolshop-quality-suite">Code on GitHub<span class="visually-hidden"> (toolshop-quality-suite)</span></a></p>
+          </article>
+          <!-- PROJECT: TREEO (upstream: fairventures-worldwide; Peter has forks. Not his codebase: credit the team) -->
+          <article class="card">
+            <h3>TREEO platform (open source)</h3>
+            <p>Fairventures Worldwide's open-sourced TREEO platform, released in May 2022, where I was sole QA and led the engineering team. The code is the team's.</p>
+            <ul class="tags">
+              <li>TypeScript</li><li>NestJS</li><li>Docker</li>
+            </ul>
+            <p class="card-links">
+              <a href="https://github.com/fairventures-worldwide/treeo2-rest-service-open">Backend services<span class="visually-hidden"> (TREEO, fairventures-worldwide on GitHub)</span></a>
+              <a href="https://github.com/fairventures-worldwide/treeo2-frontend-open">Web administration<span class="visually-hidden"> (TREEO, fairventures-worldwide on GitHub)</span></a>
+            </p>
+          </article>
+          <!-- PROJECT: wynn-qa-automation-assessment (Peter's own take-home; Peter asked to include it) -->
+          <article class="card">
+            <h3>wynn-qa-automation-assessment</h3>
+            <p>QA automation take-home (2025): Playwright (Python) UI tests and Pytest API tests, with Allure reporting and environment configs.</p>
+            <ul class="tags">
+              <li>Python</li><li>Playwright</li><li>Pytest</li>
+            </ul>
+            <p class="card-links"><a href="https://github.com/Elpharz/wynn-qa-automation-assessment">Code on GitHub<span class="visually-hidden"> (wynn-qa-automation-assessment)</span></a></p>
+          </article>
+          <!-- PROJECT: SmartCowProject (upstream: bugembeAndrew. ROLE CONFIRMED by Peter 11 Oct 2026 14:55 EAT: co-developer with Andrew Bugembe; commits are under Andrew's account) -->
+          <article class="card">
+            <h3>SmartCowProject</h3>
+            <p>An early (2016) project I co-developed with Andrew Bugembe: a cattle-tracking Android app using GPS, Google Maps and geofencing. The repository is under Andrew's account.</p>
+            <ul class="tags">
+              <li>Java</li><li>Android</li>
+            </ul>
+            <p class="card-links"><a href="https://github.com/bugembeAndrew/SmartCowProject">Code on GitHub<span class="visually-hidden"> (SmartCowProject by bugembeAndrew)</span></a></p>
           </article>
         </div>
       </div>
