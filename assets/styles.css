@@ -119,3 +119,10 @@ p { margin: 0 0 1rem; }
 .tagline { margin: 0 0 1rem; font-size: 1.0625rem; color: var(--text); max-width: 38rem; }
 .hero-more { margin: 1.25rem 0 0; font-size: 0.9375rem; }
 .role > p:last-child { margin: 0; }
+@media (min-width: 40rem) { .cards--single { grid-template-columns: 1fr; } }
+.creds { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.5rem; }
+.creds p { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.9375rem; }
+.single-line { margin: 0; }
+.plain-list { margin: 0; padding-left: 1.1rem; }
+.plain-list li { margin: 0.4rem 0; }
+.plain-list li::marker { color: var(--muted); }
