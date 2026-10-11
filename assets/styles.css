@@ -127,7 +127,7 @@ p { margin: 0 0 1rem; }
 .plain-list li { margin: 0.4rem 0; }
 .plain-list li::marker { color: var(--muted); }
 .strapline { margin: 0 0 1rem; font-size: 1rem; color: var(--accent); font-weight: 600; letter-spacing: -0.005em; max-width: 38rem; }
-.btn-note { font-weight: 400; opacity: 0.8; margin-left: 0.25rem; }
+.btn-note { font-weight: 400; margin-left: 0.25rem; }
 .skill-main { margin: 0; }
 .skill-familiar { margin: 0.35rem 0 0; font-size: 0.9375rem; }
 .skill-familiar span { font-weight: 600; color: var(--text); }
