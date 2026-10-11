@@ -53,13 +53,19 @@
       <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Kampala, Uganda · open to Nairobi and remote</p>
       <h1>Peter Mugisha</h1>
       <p class="headline">QA Lead / SDET, test automation, Kampala (open to Nairobi and remote)</p>
+      <p class="strapline">API-first test automation, CI quality gates and release sign-off for payments and field-data systems</p>
       <p class="tagline">I test the systems where the data has to be right: payments, field data and the APIs that connect them.</p>
-      <!-- Experience line: approved wording, keep verbatim (cv-v2.md line 16) -->
-      <p class="experience-line">I have about 8 years in quality work (including product-owner and QA work as co-founder of Quantson Binary), with 5+ years in dedicated QA roles. I build API-first test suites, put them into CI as quality gates, and work closely with developers so the tests stay theirs after I leave. I'm based in Kampala, work across East Africa, and I'm growing toward forward-deployed engineering on AI and agentic systems.</p>
+      <!-- Experience line: FINAL wording chosen by Peter, 11 Oct 2026 17:36 EAT (Strategist). Keep verbatim. -->
+      <p class="experience-line">I have about 8 years in quality work (including product-owner and QA work as co-founder of Quartz &amp; Binary Synergy), with 5+ years in dedicated QA roles. I build API-first test suites, put them into CI as quality gates, and work closely with developers so the tests stay theirs after I leave. I'm based in Kampala, work across East Africa, and I'm growing toward forward-deployed engineering on AI and agentic systems.</p>
       <ul class="actions">
         <li><a class="btn btn-primary" href="mailto:mugipete1@gmail.com">Email me</a></li>
         <li><a class="btn" href="https://www.linkedin.com/in/petermugisha" rel="me">LinkedIn</a></li>
         <li><a class="btn" href="https://github.com/Elpharz" rel="me">GitHub</a></li>
+        <!-- DOWNLOAD CV: ON HOLD (11 Oct 2026, 17:35 EAT): CV & LinkedIn is rebuilding the public CV. When it's ready:
+             cp /workspace/cv-review/public/Peter-Mugisha-CV-public.pdf /workspace/portfolio/site/assets/Peter-Mugisha-CV.pdf
+             then uncomment the next line.
+        <li><a class="btn btn-cv" href="assets/Peter-Mugisha-CV.pdf" download="Peter-Mugisha-CV.pdf" type="application/pdf">Download CV <span class="btn-note">(PDF)</span></a></li>
+        -->
       </ul>
       <p class="hero-more"><a href="#projects">See my work</a></p>
     </div>
@@ -108,26 +114,39 @@
             <p>QA for a mobile information platform used across Africa (IVR, USSD, SMS): I ran the biweekly release process, built Cypress web UI automation, and validated data integrity with SQL in BigQuery.</p>
           </li>
         </ol>
-        <p class="earlier">Earlier: co-founder of Quantson Binary (2015 – 2020), where I did the product-owner and QA work, and Quality Engineer at awamo GmbH (2020).</p>
+        <!-- Quartz & Binary Synergy: name and dates (Jun 2015 – early 2017) confirmed by Peter, 11 Oct 2026 17:36 EAT. -->
+        <p class="earlier">Earlier: Quality Engineer at awamo GmbH (2020), and co-founder of Quartz &amp; Binary Synergy (Jun 2015 – early 2017), where I did the product-owner and QA work.<!-- SLOT: Peter's 2017–2020 quality work. Add one short clause here once he confirms the details (role, organisation, dates). Nothing visible until then. --></p>
       </div>
     </section>
 
     <!-- ===== FEATURED PROJECTS =====
-         One card per project: title, one-line description, 2-3 tags, link. No metrics beyond the toolshop test count, no CI badges,
-         no test-report link (https://elpharz.github.io/toolshop-quality-suite/ returned 404 on 11 Oct). Sources: README.md fact table. -->
+         Featured first: toolshop-quality-suite (current work). Then three compact cards: title, one-line description, 2-3 tags, link.
+         No metrics beyond the toolshop test count, no CI badges, no test-report link. Sources: README.md fact table. -->
     <section id="projects" aria-labelledby="projects-title">
       <div class="wrap">
         <h2 id="projects-title">Featured projects</h2>
-        <div class="cards">
-          <!-- PROJECT: toolshop-quality-suite (Peter's own repo) -->
+        <!-- PROJECT (featured): toolshop-quality-suite (Peter's own repo) -->
+        <article class="card card--featured">
+          <p class="card-label">Current work</p>
+          <h3>toolshop-quality-suite</h3>
+          <p>API-first Playwright + TypeScript test framework for Toolshop, an open-source practice web shop: 29 tests, 20 of them straight against the REST API. UI journeys use the API for setup and cross-checks, and a GitHub Actions workflow runs strict TypeScript, ESLint and Prettier checks before the tests.</p>
+          <ul class="tags">
+            <li>Playwright</li><li>TypeScript</li><li>REST API</li><li>GitHub Actions</li>
+          </ul>
+          <p class="card-links"><a href="https://github.com/Elpharz/toolshop-quality-suite">Code on GitHub<span class="visually-hidden"> (toolshop-quality-suite)</span></a></p>
+        </article>
+        <div class="cards cards--three">
+          <!-- PROJECT: Career War Room. PARKED until Peter approves the write-up (drafts/career-war-room.md; page drafts/site-pending/cwr.html).
+               To enable: move cwr.html and assets/cwr-overview-synthetic.png into site/, then uncomment this card. With 4 small cards, drop the "three" modifier class from the grid so it falls back to 2 x 2.
           <article class="card">
-            <h3>toolshop-quality-suite</h3>
-            <p>API-first Playwright + TypeScript test framework for Toolshop, an open-source practice web shop: 29 tests, 20 of them straight against the REST API.</p>
+            <h3>Career War Room (private)</h3>
+            <p>A local MCP server over audited Postgres that coordinates a team of AI agents through approved file drops, with human approval gates. Private repo; synthetic-data write-up.</p>
             <ul class="tags">
-              <li>Playwright</li><li>TypeScript</li><li>REST API</li>
+              <li>MCP</li><li>Python</li><li>PostgreSQL</li>
             </ul>
-            <p class="card-links"><a href="https://github.com/Elpharz/toolshop-quality-suite">Code on GitHub<span class="visually-hidden"> (toolshop-quality-suite)</span></a></p>
+            <p class="card-links"><a href="cwr.html">Read the write-up<span class="visually-hidden"> (Career War Room)</span></a></p>
           </article>
+          -->
           <!-- PROJECT: TREEO (upstream: fairventures-worldwide; Peter has forks. Not his codebase: credit the team) -->
           <article class="card">
             <h3>TREEO platform (open source)</h3>
@@ -138,16 +157,17 @@
             <p class="card-links">
               <a href="https://github.com/fairventures-worldwide/treeo2-rest-service-open">Backend services<span class="visually-hidden"> (TREEO, fairventures-worldwide on GitHub)</span></a>
               <a href="https://github.com/fairventures-worldwide/treeo2-frontend-open">Web administration<span class="visually-hidden"> (TREEO, fairventures-worldwide on GitHub)</span></a>
+              <a href="treeo.html">Read the case study<span class="visually-hidden"> (TREEO)</span></a>
             </p>
           </article>
-          <!-- PROJECT: wynn-qa-automation-assessment (Peter's own take-home; Peter asked to include it) -->
+          <!-- PROJECT: QA automation take-home (2025). Peter's own repo; he asked to include it. Source note is in README.md -->
           <article class="card">
-            <h3>wynn-qa-automation-assessment</h3>
-            <p>QA automation take-home (2025): Playwright (Python) UI tests and Pytest API tests, with Allure reporting and environment configs.</p>
+            <h3>QA automation take-home (2025)</h3>
+            <p>Playwright (Python) UI tests and Pytest API tests, with Allure reporting and environment configs.</p>
             <ul class="tags">
               <li>Python</li><li>Playwright</li><li>Pytest</li>
             </ul>
-            <p class="card-links"><a href="https://github.com/Elpharz/wynn-qa-automation-assessment">Code on GitHub<span class="visually-hidden"> (wynn-qa-automation-assessment)</span></a></p>
+            <p class="card-links"><a href="https://github.com/Elpharz/wynn-qa-automation-assessment">Code on GitHub<span class="visually-hidden"> (QA automation take-home)</span></a></p>
           </article>
           <!-- PROJECT: SmartCowProject (upstream: bugembeAndrew. ROLE CONFIRMED by Peter 11 Oct 2026 14:55 EAT: co-developer with Andrew Bugembe; commits are under Andrew's account) -->
           <article class="card">
@@ -162,23 +182,28 @@
       </div>
     </section>
 
-    <!-- ===== SKILLS (cv-v2.md Skills section; not a COPY block, N&B skills list not used) ===== -->
+    <!-- ===== SKILLS (cv-v2.md Skills section) =====
+         Each group: <dd><p class="skill-main">main skills</p></dd>. Optional second line inside the same dd:
+         <p class="skill-familiar"><span>Familiar with:</span> ...</p>. None used: Peter confirmed 11 Oct 17:24 EAT that every
+         current skill stays a main skill (including Kubernetes, Terraform, Jenkins, GraphQL, REST Assured, Java). -->
     <section id="skills" aria-labelledby="skills-title">
       <div class="wrap">
         <h2 id="skills-title">Skills</h2>
         <dl class="skills">
           <dt>Automation</dt>
-          <dd>Playwright, Selenium WebDriver, Cypress, Appium (XCUITest, Espresso), BrowserStack, PyTest; TypeScript, JavaScript, Java, Python, SQL (BigQuery)</dd>
+          <dd><p class="skill-main">Playwright, Selenium WebDriver, Cypress, Appium (XCUITest, Espresso), BrowserStack, PyTest; TypeScript, JavaScript, Java, Python, SQL (BigQuery)</p></dd>
           <dt>API</dt>
-          <dd>REST APIs (Postman, REST Assured), GraphQL</dd>
+          <dd><p class="skill-main">REST APIs (Postman, REST Assured), GraphQL</p></dd>
           <dt>CI/CD</dt>
-          <dd>GitHub Actions, Jenkins, Bitbucket Pipelines, Docker, Kubernetes, Terraform</dd>
+          <dd><p class="skill-main">GitHub Actions, Jenkins, Bitbucket Pipelines, Docker, Kubernetes, Terraform</p></dd>
           <dt>Quality</dt>
-          <dd>Test strategy, risk-based testing, E2E and mobile automation, regression, exploratory testing, UAT, release go/no-go sign-off, defect triage</dd>
+          <dd><p class="skill-main">Test strategy, risk-based testing, E2E and mobile automation, regression, exploratory testing, UAT, release go/no-go sign-off, defect triage</p></dd>
+          <dt>AI &amp; agents</dt>
+          <dd><p class="skill-main">MCP (Model Context Protocol) servers, Agentic system design</p></dd>
           <dt>Tools</dt>
-          <dd>Jira, Xray, TestRail, ServiceNow, Bitbucket, Git, Agile/Scrum</dd>
+          <dd><p class="skill-main">Jira, Xray, TestRail, ServiceNow, Bitbucket, Git, Agile/Scrum</p></dd>
           <dt>Leadership</dt>
-          <dd>Led a 10-person cross-functional engineering team (3 years), people leadership, delivery planning and release decisions, distributed teams across time zones, QA playbooks and standards; Project Management Professional (PMP) exam prep training, 35 contact hours, Uganda Management Institute (June 2025)</dd>
+          <dd><p class="skill-main">Led a 10-person cross-functional engineering team (3 years), people leadership, delivery planning and release decisions, distributed teams across time zones, QA playbooks and standards; Project Management Professional (PMP) exam prep training, 35 contact hours, Uganda Management Institute (June 2025)</p></dd>
         </dl>
       </div>
     </section>
@@ -191,6 +216,11 @@
           <li>
             <h3>Software Testing Management (STV1.2x)</h3>
             <p>University System of Maryland (USMx) via edX · verified certificate · April 2020 · <a href="https://courses.edx.org/certificates/c401828ca9674441b2a8decd08ea7416">View certificate<span class="visually-hidden"> for Software Testing Management on edX</span></a></p>
+          </li>
+          <li>
+            <!-- Verified: Google Skills email "You've started Professional Agentic Architect Certification!" (noreply@skills.google, 13 Sep 2026). In progress only. -->
+            <h3>Professional Agentic Architect Certification</h3>
+            <p>Google Skills (Google) · in progress, started September 2026</p>
           </li>
           <li>
             <h3>Project Management Professional (PMP) Exam Prep Training</h3>
@@ -216,9 +246,12 @@
         <ul class="plain-list">
           <li><strong>API Week:</strong> April 2025 and November 2025</li>
           <li><strong>Open Source Week:</strong> May 2025 and October 2025</li>
-          <li><strong>Data Week (September 2026):</strong> I checked in to sessions on modern search built directly in Postgres, DuckDB in the browser with WebAssembly, and cleaning, analysing and visualising a dataset.</li>
-          <!-- Update from "registered" to what Peter actually did once the events have happened -->
-          <li><strong>Hacktoberfest 2026:</strong> registered for Global Hack Week and two in-person Hack Days in Kampala (17 Oct with GDG on Campus Makerere University, and 24 Oct with ResNet Academy).</li>
+          <li><strong>Data Week (September 2026), training sessions attended:</strong> modern search built directly in Postgres, DuckDB in the browser with WebAssembly, and cleaning, analysing and visualising a dataset.</li>
+          <li><strong>Hacktoberfest 2026, participating:</strong> Global Hack Week (October) and two in-person Hack Days in Kampala (17 Oct with GDG on Campus Makerere University, and 24 Oct with ResNet Academy).</li>
+          <!-- SLOT: Hack Day output. After 17 Oct (GDG on Campus Makerere) and 24 Oct (ResNet Academy), add ONE line per event with what Peter actually built or contributed (repo/PR link if public). Until then, leave this slot empty.
+          <li><strong>Hack Day Kampala, 17 Oct 2026:</strong> [what I built or contributed, link]</li>
+          <li><strong>Hack Day Kampala, 24 Oct 2026:</strong> [what I built or contributed, link]</li>
+          -->
         </ul>
       </div>
     </section>

@@ -126,3 +126,42 @@ p { margin: 0 0 1rem; }
 .plain-list { margin: 0; padding-left: 1.1rem; }
 .plain-list li { margin: 0.4rem 0; }
 .plain-list li::marker { color: var(--muted); }
+.strapline { margin: 0 0 1rem; font-size: 1rem; color: var(--accent); font-weight: 600; letter-spacing: -0.005em; max-width: 38rem; }
+.btn-note { font-weight: 400; opacity: 0.8; margin-left: 0.25rem; }
+.skill-main { margin: 0; }
+.skill-familiar { margin: 0.35rem 0 0; font-size: 0.9375rem; }
+.skill-familiar span { font-weight: 600; color: var(--text); }
+.card--featured { padding: 1.75rem; border-color: var(--accent); margin-bottom: 1rem; gap: 0.85rem; }
+.card--featured h3 { font-size: 1.375rem; }
+.card--featured > p { font-size: 1rem; }
+.card-label { margin: 0; font: 600 0.75rem/1 var(--font); text-transform: uppercase; letter-spacing: 0.09em; color: var(--accent) !important; }
+@media (min-width: 52rem) { .cards--three { grid-template-columns: repeat(3, 1fr); } }
+.hero--case h1 { font-size: clamp(1.75rem, 5vw, 2.5rem); }
+.prose p, .prose li { max-width: 40rem; }
+.prose ul { margin: 0; padding-left: 1.1rem; }
+.prose li { margin: 0.4rem 0; }
+.prose li::marker { color: var(--muted); }
+.prose .contact-list { padding-left: 0; }
+.prose .contact-list span { min-width: 6.5rem; }
+.btn-cv { border-color: var(--accent); color: var(--accent); }
+/* Case-study extras (used by cwr.html when it's published; harmless otherwise) */
+.legend { margin: 0; color: var(--muted); font-size: 0.875rem; }
+.status { display: inline-block; font: 600 0.72rem/1 var(--font); text-transform: uppercase; letter-spacing: 0.06em; padding: 0.3rem 0.45rem; border-radius: 5px; border: 1px solid currentColor; vertical-align: 0.1em; }
+.status-built { color: var(--accent); }
+.status-progress { color: #8a4b00; }
+.status-planned { color: var(--muted); }
+@media (prefers-color-scheme: dark) { .status-progress { color: #f5b971; } }
+.status-list { list-style: none; padding-left: 0 !important; }
+.status-list li { margin: 0.75rem 0; }
+code { font: 0.9em var(--mono); background: var(--accent-soft); padding: 0.05em 0.3em; border-radius: 4px; overflow-wrap: anywhere; }
+.diagram, .shot { margin: 0 0 1.5rem; }
+.diagram svg { width: 100%; height: auto; display: block; }
+.diagram figcaption, .shot figcaption { color: var(--muted); font-size: 0.875rem; margin-top: 0.5rem; }
+.shot img { width: 100%; height: auto; display: block; border: 1px solid var(--border); border-radius: var(--radius); }
+.d-box rect { fill: var(--surface); stroke: var(--border); stroke-width: 1.5; }
+.d-human rect { stroke: var(--accent); stroke-width: 2; }
+.d-core rect { fill: var(--accent-soft); stroke: var(--accent); }
+.d-box text { fill: var(--text); font: 600 14px var(--font); text-anchor: middle; }
+.d-box text.d-sub { fill: var(--muted); font-weight: 400; font-size: 12px; }
+.d-line line, .d-line path { stroke: var(--muted); stroke-width: 1.5; }
+.d-arrowhead { fill: var(--muted); }

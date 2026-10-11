@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PREPARED, NOT APPROVED: TREEO case study from /workspace/portfolio/drafts/treeo-case-study.md.
+       Text approved by Peter, 11 Oct 2026 17:32 EAT (all 5 CONFIRM items confirmed). -->
+  <link rel="canonical" href="https://elpharz.github.io/treeo.html">
+  <title>TREEO case study · Peter Mugisha</title>
+  <meta name="description" content="How I handled quality as sole QA and engineering team lead for TREEO, Fairventures Worldwide's open-source environmental monitoring platform (2021–2023).">
+  <meta name="author" content="Peter Mugisha">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://elpharz.github.io/treeo.html">
+  <meta property="og:title" content="TREEO case study · Peter Mugisha">
+  <meta property="og:description" content="Sole QA and engineering team lead for an open-source environmental monitoring platform, released in May 2022.">
+  <meta property="og:site_name" content="Peter Mugisha">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='system-ui,Arial,sans-serif' font-size='26' font-weight='700' fill='%23fff'%3EPM%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./" aria-label="Peter Mugisha, portfolio home">
+        <img src="assets/monogram.svg" width="28" height="28" alt="">
+        <span>Peter Mugisha</span>
+      </a>
+      <nav class="site-nav" aria-label="Site">
+        <ul>
+          <li><a href="./#projects">Back to projects</a></li>
+          <li><a href="./#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="case">
+      <div class="hero wrap hero--case">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Case study · Fairventures Worldwide · Jan 2021 – Dec 2023</p>
+        <h1>TREEO: quality for an open-source environmental monitoring platform</h1>
+        <p class="headline">Sole QA engineer and lead of the 10-person engineering team, through the open-source release in May 2022.</p>
+      </div>
+
+      <section aria-labelledby="problem-title">
+        <div class="wrap prose">
+          <h2 id="problem-title">The problem</h2>
+          <p>TREEO is a GIZ-sponsored environmental monitoring platform made up of a REST service, a web frontend and a mobile app. It had to meet BMZ/GIZ compliance and quality requirements, and the team building it was spread across Germany, the Czech Republic and Uganda. The plan was to release it as open source, so the code had to be ready for public scrutiny.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="role-title">
+        <div class="wrap prose">
+          <h2 id="role-title">My role</h2>
+          <p>From January 2021 to December 2023 I was Lead QA Engineer and Engineering Team Lead (Project Lead) at Fairventures Worldwide (Fair Ventures Digital). I led the 10-person cross-functional engineering team across Germany, the Czech Republic and Uganda, owning sprint planning, delivery, cross-site coordination and release go/no-go decisions. At the same time I was the sole QA engineer, owning quality end to end from inception: test strategy, automation, CI/CD quality gates and release sign-off.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="approach-title">
+        <div class="wrap prose">
+          <h2 id="approach-title">Approach</h2>
+          <ul>
+            <li>I built CI/CD pipelines with automated quality gates, so under-tested code could not reach production.</li>
+            <li>I automated regression testing with Python, PyTest and Selenium, and maintained test coverage across platforms through bi-weekly sprints.</li>
+            <li>I set up end-to-end QA processes, playbooks and standards, documented so they held across time zones.</li>
+            <li>Before the release, I directed security audits of the three repositories.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Trade-offs S11–S14 confirmed by Peter, 11 Oct 2026 17:32 EAT. -->
+      <section aria-labelledby="tradeoffs-title">
+        <div class="wrap prose">
+          <h2 id="tradeoffs-title">Trade-offs</h2>
+          <ul>
+            <li>With one QA engineer covering three platforms, I put regression effort into automation rather than repeated manual passes.</li>
+            <li>The quality gates could hold up a merge until tests passed; the team accepted that in exchange for fewer broken deployments.</li>
+            <li>Leading the team and signing off releases myself meant balancing delivery pressure against my own quality bar.</li>
+            <li>Writing playbooks took time away from testing, but it meant the standards held when I wasn't online.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="release-title">
+        <div class="wrap prose">
+          <h2 id="release-title">The open-source release (May 2022)</h2>
+          <p>TREEO was released as open source in May 2022, as three public repositories under the Apache 2.0 licence. I presented the release at Fairventures Worldwide headquarters in Stuttgart. The code is the team's work.</p>
+          <ul class="contact-list">
+            <li><span>Backend</span> <a href="https://github.com/fairventures-worldwide/treeo2-rest-service-open">treeo2-rest-service-open</a></li>
+            <li><span>Web admin</span> <a href="https://github.com/fairventures-worldwide/treeo2-frontend-open">treeo2-frontend-open</a></li>
+            <li><span>Mobile</span> <a href="https://github.com/fairventures-worldwide/treeo2-mobile-app-open">treeo2-mobile-app-open</a></li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><a href="./">Back to the portfolio</a> · © 2026 Peter Mugisha. Plain HTML and CSS, no tracking.</p>
+    </div>
+  </footer>
+</body>
+</html>
