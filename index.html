@@ -124,8 +124,16 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <!-- Header controls (mockup right side), wired to real targets only. Share button is shown by assets/enhance.js; hidden without JS. -->
+      <div class="header-actions">
+        <a class="icon-btn" href="https://github.com/Elpharz" rel="me" aria-label="GitHub (Elpharz)" title="GitHub (Elpharz)"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 19h8"/> <path d="m4 17 6-6-6-6"/></svg></a>
+        <button class="icon-btn js-share" type="button" aria-label="Share this page" title="Share this page" hidden><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="18" cy="5" r="3"/> <circle cx="6" cy="12" r="3"/> <circle cx="18" cy="19" r="3"/> <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/> <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg></button>
+        <a class="hbtn hbtn-report" href="/toolshop-quality-suite/"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 16H8"/> <path d="M14 8H8"/> <path d="M16 12H8"/> <path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"/></svg><span class="hbtn-label">Live Test Report</span><span class="visually-hidden hbtn-sr"> (toolshop-quality-suite)</span></a>
+        <a class="hbtn hbtn-cv" href="assets/Peter-Mugisha-CV.pdf" download="Peter-Mugisha-CV.pdf" type="application/pdf"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 15V3"/> <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/> <path d="m7 10 5 5 5-5"/></svg><span class="hbtn-label">Download CV</span></a>
+      </div>
     </div>
   </header>
+  <p class="toast" role="status" aria-live="polite"></p>
 
   <main id="main">
     <!-- ===== HERO: all copy verbatim from live index.html HERO; availability line = live CONTACT sentence ===== -->
@@ -139,11 +147,11 @@
       <!-- Experience line: FINAL wording chosen by Peter, 11 Oct 2026 17:36 EAT (Strategist). Keep verbatim. -->
       <p class="experience-line">I have about 8 years in quality work (including product-owner and QA work as co-founder of Quartz &amp; Binary Synergy), with 5+ years in dedicated QA roles. I build API-first test suites, put them into CI as quality gates, and work closely with developers so the tests stay theirs after I leave. I'm based in Kampala, work across East Africa, and I'm growing toward forward-deployed engineering on AI and agentic systems.</p>
       <ul class="actions">
-        <li><a class="btn btn-primary" href="mailto:mugipete1@gmail.com">Email me</a></li>
-        <li><a class="btn" href="https://www.linkedin.com/in/petermugisha" rel="me">LinkedIn</a></li>
-        <li><a class="btn" href="https://github.com/Elpharz" rel="me">GitHub</a></li>
+        <li><a class="btn btn-primary" href="mailto:mugipete1@gmail.com"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/> <rect x="2" y="4" width="20" height="16" rx="2"/></svg>Email me</a></li>
+        <li><a class="btn" href="https://www.linkedin.com/in/petermugisha" rel="me"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/> <rect width="20" height="14" x="2" y="6" rx="2"/></svg>LinkedIn</a></li>
+        <li><a class="btn" href="https://github.com/Elpharz" rel="me"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 18 6-6-6-6"/> <path d="m8 6-6 6 6 6"/></svg>GitHub</a></li>
         <!-- DOWNLOAD CV: same file and attributes as the live site -->
-        <li><a class="btn btn-cv" href="assets/Peter-Mugisha-CV.pdf" download="Peter-Mugisha-CV.pdf" type="application/pdf">Download CV <span class="btn-note">(PDF)</span></a></li>
+        <li><a class="btn btn-cv" href="assets/Peter-Mugisha-CV.pdf" download="Peter-Mugisha-CV.pdf" type="application/pdf"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/> <path d="M14 2v5a1 1 0 0 0 1 1h5"/> <path d="M10 9H8"/> <path d="M16 13H8"/> <path d="M16 17H8"/></svg>Download CV <span class="btn-note">(PDF)</span></a></li>
       </ul>
       <p class="hero-more"><a href="#projects">See my work</a></p>
 
@@ -151,24 +159,24 @@
       <h2 class="visually-hidden">At a glance</h2>
       <ul class="metrics grid">
         <li class="metric col t-4 d-3">
-          <span class="metric-label">Quality work</span>
-          <span class="metric-value">About 8 years</span>
-          <span class="metric-note">5+ years in dedicated QA roles</span>
+          <span class="metric-head"><span class="metric-label">Quality Leadership</span><svg class="icon icon-accent" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/> <path d="m16 9-5.5 5.5L8 12"/></svg></span>
+          <span class="metric-value">8+ Years</span>
+          <span class="metric-note">Full-lifecycle QA &amp; product ownership</span>
         </li>
         <li class="metric col t-4 d-3">
-          <span class="metric-label">Team led</span>
-          <span class="metric-value">10-person</span>
-          <span class="metric-note">Engineering team across Germany, the Czech Republic and Uganda, for three years</span>
+          <span class="metric-head"><span class="metric-label">Engineering Scale</span><svg class="icon icon-accent" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/> <path d="M16 3.128a4 4 0 0 1 0 7.744"/> <path d="M22 21v-2a4 4 0 0 0-3-3.87"/> <circle cx="9" cy="7" r="4"/></svg></span>
+          <span class="metric-value">10-Person</span>
+          <span class="metric-note">Cross-functional team led (3 yrs, Fairventures)</span>
         </li>
         <li class="metric col t-4 d-3">
-          <span class="metric-label">toolshop-quality-suite</span>
-          <span class="metric-value">29 tests</span>
-          <span class="metric-note">Playwright + TypeScript, 20 of them straight against the REST API (public repo)</span>
+          <span class="metric-head"><span class="metric-label">Verification Matrix</span><svg class="icon icon-accent" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 5h8"/> <path d="M13 12h8"/> <path d="M13 19h8"/> <path d="m3 17 2 2 4-4"/> <path d="m3 7 2 2 4-4"/></svg></span>
+          <span class="metric-value">113 Tests</span>
+          <span class="metric-note">PostgreSQL evidence ledger for AI agents</span>
         </li>
         <li class="metric col t-4 d-3">
-          <span class="metric-label">Release sign-off</span>
-          <span class="metric-value">4 markets</span>
-          <span class="metric-note">Financial-services apps in South Africa, Ghana, Nigeria and East Africa</span>
+          <span class="metric-head"><span class="metric-label">Sign-Off Scope</span><svg class="icon icon-accent" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="20" height="12" x="2" y="6" rx="2"/> <circle cx="12" cy="12" r="2"/> <path d="M6 12h.01M18 12h.01"/></svg></span>
+          <span class="metric-value">4+ Countries</span>
+          <span class="metric-note">Financial apps: SA, GH, NG, East Africa</span>
         </li>
       </ul>
     </div>
@@ -184,7 +192,7 @@
           <!-- PROJECT (featured): toolshop-quality-suite (Peter's own repo) -->
           <article class="card card--featured col t-8 d-12">
             <div class="card-top">
-              <p class="badge badge-ok"><span class="badge-dot" aria-hidden="true"></span>Current work</p>
+              <p class="badge badge-ok"><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/> <path d="m16 9-5.5 5.5L8 12"/></svg>Current work</p>
               <p class="card-meta">Playwright · TypeScript</p>
             </div>
             <div class="featured-body">
@@ -195,9 +203,9 @@
                   <li>Playwright</li><li>TypeScript</li><li>REST API</li><li>GitHub Actions</li>
                 </ul>
                 <p class="card-links">
-                  <a href="https://github.com/Elpharz/toolshop-quality-suite">Code on GitHub<span class="visually-hidden"> (toolshop-quality-suite)</span></a>
-                  <a href="ai-evals.html">AI eval results<span class="visually-hidden"> (toolshop-quality-suite LLM evals)</span></a>
-                  <a href="/toolshop-quality-suite/">Test report<span class="visually-hidden"> (toolshop-quality-suite)</span></a>
+                  <a href="https://github.com/Elpharz/toolshop-quality-suite"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 18 6-6-6-6"/> <path d="m8 6-6 6 6 6"/></svg>Code on GitHub<span class="visually-hidden"> (toolshop-quality-suite)</span></a>
+                  <a href="ai-evals.html"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v16a2 2 0 0 0 2 2h16"/> <path d="M18 17V9"/> <path d="M13 17V5"/> <path d="M8 17v-3"/></svg>AI eval results<span class="visually-hidden"> (toolshop-quality-suite LLM evals)</span></a>
+                  <a href="/toolshop-quality-suite/"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 16H8"/> <path d="M14 8H8"/> <path d="M16 12H8"/> <path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"/></svg>Test report<span class="visually-hidden"> (toolshop-quality-suite)</span></a>
                 </p>
               </div>
               <!-- TERMINAL: illustrative only. Commands are the repo's own npm scripts (package.json on GitHub, checked 18 Oct 2026). No output, timings or pass claims. -->
@@ -223,7 +231,7 @@
             <ul class="tags">
               <li>Python</li><li>PostgreSQL</li><li>MCP</li><li>AI agents</li>
             </ul>
-            <p class="card-links card-links--split"><span class="card-meta">Private repository</span><a href="cwr.html">Read the case study<span class="visually-hidden"> (Career War Room)</span></a></p>
+            <p class="card-links card-links--split"><span class="card-meta">Private repository</span><a href="cwr.html">Read the case study<span class="visually-hidden"> (Career War Room)</span><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/> <path d="m12 5 7 7-7 7"/></svg></a></p>
           </article>
 
           <!-- PROJECT: TREEO (upstream: fairventures-worldwide; Peter has forks. Not his codebase: credit the team) -->
@@ -237,9 +245,9 @@
               <li>TypeScript</li><li>NestJS</li><li>Docker</li>
             </ul>
             <p class="card-links">
-              <a href="https://github.com/fairventures-worldwide/treeo2-rest-service-open">Backend services<span class="visually-hidden"> (TREEO, fairventures-worldwide on GitHub)</span></a>
-              <a href="https://github.com/fairventures-worldwide/treeo2-frontend-open">Web administration<span class="visually-hidden"> (TREEO, fairventures-worldwide on GitHub)</span></a>
-              <a href="treeo.html">Read the case study<span class="visually-hidden"> (TREEO)</span></a>
+              <a href="https://github.com/fairventures-worldwide/treeo2-rest-service-open"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 3h6v6"/> <path d="M10 14 21 3"/> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>Backend services<span class="visually-hidden"> (TREEO, fairventures-worldwide on GitHub)</span></a>
+              <a href="https://github.com/fairventures-worldwide/treeo2-frontend-open"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 3h6v6"/> <path d="M10 14 21 3"/> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>Web administration<span class="visually-hidden"> (TREEO, fairventures-worldwide on GitHub)</span></a>
+              <a href="treeo.html">Read the case study<span class="visually-hidden"> (TREEO)</span><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/> <path d="m12 5 7 7-7 7"/></svg></a>
             </p>
           </article>
 
@@ -253,7 +261,7 @@
             <ul class="tags">
               <li>Python</li><li>Playwright</li><li>Pytest</li>
             </ul>
-            <p class="card-links"><a href="https://github.com/Elpharz/wynn-qa-automation-assessment">Code on GitHub<span class="visually-hidden"> (QA automation take-home)</span></a></p>
+            <p class="card-links"><a href="https://github.com/Elpharz/wynn-qa-automation-assessment"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 3h6v6"/> <path d="M10 14 21 3"/> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>Code on GitHub<span class="visually-hidden"> (QA automation take-home)</span></a></p>
           </article>
 
           <!-- PROJECT: SmartCowProject (upstream: bugembeAndrew. ROLE CONFIRMED by Peter 11 Oct 2026 14:55 EAT: co-developer with Andrew Bugembe) -->
@@ -266,7 +274,7 @@
             <ul class="tags">
               <li>Java</li><li>Android</li>
             </ul>
-            <p class="card-links"><a href="https://github.com/bugembeAndrew/SmartCowProject">Code on GitHub<span class="visually-hidden"> (SmartCowProject by bugembeAndrew)</span></a></p>
+            <p class="card-links"><a href="https://github.com/bugembeAndrew/SmartCowProject"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 3h6v6"/> <path d="M10 14 21 3"/> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>Code on GitHub<span class="visually-hidden"> (SmartCowProject by bugembeAndrew)</span></a></p>
           </article>
         </div>
       </div>
@@ -342,27 +350,27 @@
         </div>
         <div class="grid">
           <div class="card skill col t-4 d-4">
-            <h3>Automation</h3>
+            <h3 class="icon-heading"><svg class="icon icon-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20v-9"/> <path d="M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z"/> <path d="M14.12 3.88 16 2"/> <path d="M21 21a4 4 0 0 0-3.81-4"/> <path d="M21 5a4 4 0 0 1-3.55 3.97"/> <path d="M22 13h-4"/> <path d="M3 21a4 4 0 0 1 3.81-4"/> <path d="M3 5a4 4 0 0 0 3.55 3.97"/> <path d="M6 13H2"/> <path d="m8 2 1.88 1.88"/> <path d="M9 7.13V6a3 3 0 1 1 6 0v1.13"/></svg>Automation</h3>
             <ul class="tags"><li>Playwright</li><li>Selenium WebDriver</li><li>Cypress</li><li>Appium (XCUITest, Espresso)</li><li>BrowserStack</li><li>PyTest</li><li>TypeScript</li><li>JavaScript</li><li>Java</li><li>Python</li><li>SQL (BigQuery)</li></ul>
           </div>
           <div class="card skill col t-4 d-4">
-            <h3>API</h3>
+            <h3 class="icon-heading"><svg class="icon icon-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22v-5"/> <path d="M15 8V2"/> <path d="M17 8a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1z"/> <path d="M9 8V2"/></svg>API</h3>
             <ul class="tags"><li>REST APIs</li><li>Postman</li><li>REST Assured</li><li>GraphQL</li></ul>
           </div>
           <div class="card skill col t-4 d-4">
-            <h3>CI/CD</h3>
+            <h3 class="icon-heading"><svg class="icon icon-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 6a9 9 0 0 0-9 9V3"/> <circle cx="18" cy="6" r="3"/> <circle cx="6" cy="18" r="3"/></svg>CI/CD</h3>
             <ul class="tags"><li>GitHub Actions</li><li>Jenkins</li><li>Bitbucket Pipelines</li><li>Docker</li><li>Kubernetes</li><li>Terraform</li></ul>
           </div>
           <div class="card skill col t-4 d-4">
-            <h3>Quality and leadership</h3>
+            <h3 class="icon-heading"><svg class="icon icon-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/> <path d="m9 12 2 2 4-4"/></svg>Quality and leadership</h3>
             <ul class="tags"><li>Test strategy</li><li>Risk-based testing</li><li>E2E and mobile automation</li><li>Regression</li><li>Exploratory testing</li><li>UAT</li><li>Release go/no-go sign-off</li><li>Defect triage</li><li>Led a 10-person cross-functional engineering team (3 years)</li><li>People leadership</li><li>Delivery planning and release decisions</li><li>Distributed teams across time zones</li><li>QA playbooks and standards</li></ul>
           </div>
           <div class="card skill col t-4 d-4">
-            <h3>AI &amp; agents</h3>
+            <h3 class="icon-heading"><svg class="icon icon-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 18V5"/> <path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/> <path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/> <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/> <path d="M18 18a4 4 0 0 0 2-7.464"/> <path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/> <path d="M6 18a4 4 0 0 1-2-7.464"/> <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/></svg>AI &amp; agents</h3>
             <ul class="tags"><li>MCP (Model Context Protocol) servers</li><li>Agentic system design</li></ul>
           </div>
           <div class="card skill col t-4 d-4">
-            <h3>Tools</h3>
+            <h3 class="icon-heading"><svg class="icon icon-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></svg>Tools</h3>
             <ul class="tags"><li>Jira</li><li>Xray</li><li>TestRail</li><li>ServiceNow</li><li>Bitbucket</li><li>Git</li><li>Agile/Scrum</li></ul>
           </div>
         </div>
@@ -378,11 +386,11 @@
         </div>
         <div class="grid">
           <div class="card col t-8 d-4" id="certifications">
-            <h3 class="col-title">Certifications and training</h3>
+            <h3 class="col-title icon-heading"><svg class="icon icon-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/> <circle cx="12" cy="8" r="6"/></svg>Certifications and training</h3>
             <ul class="creds">
               <li>
                 <h4>Software Testing Management (STV1.2x)</h4>
-                <p>University System of Maryland (USMx) via edX · verified certificate · April 2020 · <a href="https://courses.edx.org/certificates/c401828ca9674441b2a8decd08ea7416">View certificate<span class="visually-hidden"> for Software Testing Management on edX</span></a></p>
+                <p>University System of Maryland (USMx) via edX · verified certificate · April 2020 · <a href="https://courses.edx.org/certificates/c401828ca9674441b2a8decd08ea7416">View certificate<span class="visually-hidden"> for Software Testing Management on edX</span><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 3h6v6"/> <path d="M10 14 21 3"/> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a></p>
               </li>
               <li>
                 <h4>Professional Agentic Architect Certification</h4>
@@ -395,7 +403,7 @@
             </ul>
           </div>
           <div class="card col t-8 d-4" id="education">
-            <h3 class="col-title">Education</h3>
+            <h3 class="col-title icon-heading"><svg class="icon icon-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/> <path d="M22 10v6"/> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>Education</h3>
             <ul class="creds">
               <li>
                 <h4>BSc Software Engineering</h4>
@@ -404,7 +412,7 @@
             </ul>
           </div>
           <div class="card col t-8 d-4" id="community">
-            <h3 class="col-title">Community and hackathons</h3>
+            <h3 class="col-title icon-heading"><svg class="icon icon-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 21a8 8 0 0 0-16 0"/> <circle cx="10" cy="8" r="5"/> <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>Community and hackathons</h3>
             <p><strong>Major League Hacking (MLH) Global Hack Week</strong>: a regular participant since April 2025.</p>
             <ul class="plain-list">
               <li><strong>API Week:</strong> April 2025 and November 2025</li>
@@ -425,11 +433,51 @@
           <h2 id="contact-title">Contact</h2>
           <p class="contact-intro">Open to QA, test-automation and forward-deployed roles, remote or in Nairobi and Kampala.</p>
           <ul class="channels grid">
-            <li class="col t-4 d-3"><span class="channel-label">Email</span> <a href="mailto:mugipete1@gmail.com">mugipete1@gmail.com</a></li>
-            <li class="col t-4 d-3"><span class="channel-label">LinkedIn</span> <a href="https://www.linkedin.com/in/petermugisha" rel="me">linkedin.com/in/petermugisha</a></li>
-            <li class="col t-4 d-3"><span class="channel-label">GitHub</span> <a href="https://github.com/Elpharz" rel="me">github.com/Elpharz</a></li>
-            <li class="col t-4 d-3"><span class="channel-label">Location</span> Kampala, Uganda</li>
+            <li class="col t-4 d-6 channel"><svg class="icon icon-accent channel-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/> <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"/></svg><span class="channel-text"><span class="channel-label">Email</span> <a href="mailto:mugipete1@gmail.com">mugipete1@gmail.com</a></span><span class="copy-wrap"><button class="copy-btn js-copy" type="button" data-copy="mugipete1@gmail.com" aria-label="Copy email address" hidden>Copy</button><span class="copy-status" role="status" aria-live="polite"></span></span></li>
+            <li class="col t-4 d-6 channel"><svg class="icon icon-accent channel-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/> <rect width="20" height="14" x="2" y="6" rx="2"/></svg><span class="channel-text"><span class="channel-label">LinkedIn</span> <a href="https://www.linkedin.com/in/petermugisha" rel="me">linkedin.com/in/petermugisha</a></span></li>
+            <li class="col t-4 d-6 channel"><svg class="icon icon-accent channel-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 18 6-6-6-6"/> <path d="m8 6-6 6 6 6"/></svg><span class="channel-text"><span class="channel-label">GitHub</span> <a href="https://github.com/Elpharz" rel="me">github.com/Elpharz</a></span></li>
+            <li class="col t-4 d-6 channel"><svg class="icon icon-accent channel-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/> <circle cx="12" cy="10" r="3"/></svg><span class="channel-text"><span class="channel-label">Location</span> Kampala, Uganda</span></li>
           </ul>
+          <!-- CONTACT FORM (Peter's request, 18 Oct 2026): FormSubmit, no JS needed. The first real submission triggers FormSubmit's activation email to this address. Not submitted during review. -->
+          <form class="enquiry" action="https://formsubmit.co/mugipete1@gmail.com" method="POST" aria-labelledby="enquiry-title" aria-describedby="enquiry-desc">
+            <div class="enquiry-head">
+              <h3 id="enquiry-title" class="icon-heading"><svg class="icon icon-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/> <path d="m21.854 2.147-10.94 10.939"/></svg>Send an enquiry</h3>
+              <p id="enquiry-desc">Goes straight to my inbox. I usually reply within 24 hours.</p>
+            </div>
+            <input type="hidden" name="_subject" value="Portfolio enquiry">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_next" value="https://elpharz.github.io/thanks.html">
+            <div class="hp" aria-hidden="true">
+              <label for="f-honey">Leave this field empty</label>
+              <input id="f-honey" type="text" name="_honey" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="grid form-grid">
+              <div class="field col t-4 d-6">
+                <label for="f-name">Name / company</label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="e.g. Jane Doe (Recruiter)">
+              </div>
+              <div class="field col t-4 d-6">
+                <label for="f-email">Email</label>
+                <input id="f-email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field col t-8 d-12">
+                <label for="f-role">Role focus</label>
+                <select id="f-role" name="role_focus" autocomplete="off" required>
+                  <option value="">Choose one</option>
+                  <option>QA Lead / SDET Leadership</option>
+                  <option>Test Automation</option>
+                  <option>Forward Deployed Engineer</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field col t-8 d-12">
+                <label for="f-message">Message</label>
+                <textarea id="f-message" name="message" rows="5" autocomplete="off" required></textarea>
+              </div>
+            </div>
+            <p class="form-actions"><button class="btn btn-primary" type="submit"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/> <path d="m21.854 2.147-10.94 10.939"/></svg>Send enquiry</button></p>
+          </form>
         </div>
       </div>
     </section>
@@ -438,9 +486,15 @@
   <!-- ===== FOOTER (verbatim from live) ===== -->
   <footer class="site-footer">
     <div class="wrap">
-      <p>© 2026 Peter Mugisha. Plain HTML and CSS. Cookie-free visit counts via Cloudflare Web Analytics.</p>
+      <p>© 2026 Peter Mugisha. Plain HTML and CSS, with a tiny share script. Cookie-free visit counts via Cloudflare Web Analytics.</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/Elpharz" rel="me"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 18 6-6-6-6"/> <path d="m8 6-6 6 6 6"/></svg>GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/petermugisha" rel="me"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/> <rect width="20" height="14" x="2" y="6" rx="2"/></svg>LinkedIn</a></li>
+      </ul>
     </div>
   </footer>
+<!-- Icons: inline SVG from Lucide (lucide-static 1.59.0), ISC licence; see assets/LUCIDE-LICENSE.txt. -->
+<script src="assets/enhance.js" defer></script>
 <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "f91afb2359854ead9607797a774e4904"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
