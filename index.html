@@ -104,17 +104,20 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <!-- ===== HEADER / NAV ===== -->
+  <!-- ===== HEADER / NAV (redesign 18 Oct 2026; labels from live index.html) ===== -->
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="#top" aria-label="Peter Mugisha, back to top">
-        <img src="assets/monogram.svg" width="28" height="28" alt="">
-        <span>Peter Mugisha</span>
-      </a>
+      <div class="brand-group">
+        <a class="brand" href="#top" aria-label="Peter Mugisha, back to top">
+          <img src="assets/monogram.svg" width="28" height="28" alt="">
+          <span>Peter Mugisha</span>
+        </a>
+        <span class="brand-badge" aria-hidden="true">QA Lead / SDET</span>
+      </div>
       <nav class="site-nav" aria-label="Sections">
         <ul>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#community">Community</a></li>
@@ -125,11 +128,10 @@
   </header>
 
   <main id="main">
-    <!-- ===== HERO (above the fold) =====
-         Copy: network/drafts/portfolio-one-pager.md "Hero" + "About" (merged 11 Oct 2026).
-         Headline kept from the brief, not N&B's "QA and test-automation engineer". -->
-    <div class="hero wrap" id="top">
-      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Kampala, Uganda · open to Nairobi and remote</p>
+    <!-- ===== HERO: all copy verbatim from live index.html HERO; availability line = live CONTACT sentence ===== -->
+    <div class="hero container" id="top">
+      <p class="availability"><span class="pulse" aria-hidden="true"></span>Open to QA, test-automation and forward-deployed roles, remote or in Nairobi and Kampala.</p>
+      <p class="eyebrow">Kampala, Uganda · open to Nairobi and remote</p>
       <h1>Peter Mugisha</h1>
       <p class="headline">QA Lead / SDET, test automation, Kampala (open to Nairobi and remote)</p>
       <p class="strapline">API-first test automation, CI quality gates and release sign-off for payments and field-data systems</p>
@@ -140,88 +142,95 @@
         <li><a class="btn btn-primary" href="mailto:mugipete1@gmail.com">Email me</a></li>
         <li><a class="btn" href="https://www.linkedin.com/in/petermugisha" rel="me">LinkedIn</a></li>
         <li><a class="btn" href="https://github.com/Elpharz" rel="me">GitHub</a></li>
-        <!-- DOWNLOAD CV: public CV from CV & LinkedIn (cv-review/public/Peter-Mugisha-CV-public.pdf, sha256 c4ea0665…, 11 Oct 2026). Re-copy if they rebuild. -->
+        <!-- DOWNLOAD CV: same file and attributes as the live site -->
         <li><a class="btn btn-cv" href="assets/Peter-Mugisha-CV.pdf" download="Peter-Mugisha-CV.pdf" type="application/pdf">Download CV <span class="btn-note">(PDF)</span></a></li>
       </ul>
       <p class="hero-more"><a href="#projects">See my work</a></p>
+
+      <!-- METRIC STRIP: every figure appears on the live site (index.html HERO/EXPERIENCE, cwr.html). See CONTENT-MAP.md. -->
+      <h2 class="visually-hidden">At a glance</h2>
+      <ul class="metrics grid">
+        <li class="metric col t-4 d-3">
+          <span class="metric-label">Quality work</span>
+          <span class="metric-value">About 8 years</span>
+          <span class="metric-note">5+ years in dedicated QA roles</span>
+        </li>
+        <li class="metric col t-4 d-3">
+          <span class="metric-label">Team led</span>
+          <span class="metric-value">10-person</span>
+          <span class="metric-note">Engineering team across Germany, the Czech Republic and Uganda, for three years</span>
+        </li>
+        <li class="metric col t-4 d-3">
+          <span class="metric-label">toolshop-quality-suite</span>
+          <span class="metric-value">29 tests</span>
+          <span class="metric-note">Playwright + TypeScript, 20 of them straight against the REST API (public repo)</span>
+        </li>
+        <li class="metric col t-4 d-3">
+          <span class="metric-label">Release sign-off</span>
+          <span class="metric-value">4 markets</span>
+          <span class="metric-note">Financial-services apps in South Africa, Ghana, Nigeria and East Africa</span>
+        </li>
+      </ul>
     </div>
 
-    <!-- ===== EXPERIENCE HIGHLIGHTS ===== -->
-    <section id="experience" aria-labelledby="experience-title">
-      <div class="wrap">
-        <h2 id="experience-title">Experience highlights</h2>
-        <ol class="roles">
-          <li class="role">
-            <div class="role-head">
-              <h3>Senior QA Engineer (Supervisor Level)</h3>
-              <span class="role-dates">Jan 2026 – May 2026</span>
-            </div>
-            <p class="role-meta">ADWrap (adwrap.app)</p>
-            <p>I owned QA and test automation, from test strategy to release sign-off, and also oversaw a 3-person customer support team.</p>
-          </li>
-          <li class="role">
-            <div class="role-head">
-              <h3>Senior QA Engineer</h3>
-              <span class="role-dates">Feb 2024 – Jun 2025</span>
-            </div>
-            <p class="role-meta">Old Mutual East Africa · contract via GoodInfo</p>
-            <p>I owned release quality sign-off for financial-services apps in South Africa, Ghana, Nigeria and East Africa, built Playwright (TypeScript) end-to-end and API tests, and evaluated and implemented an Appium + BrowserStack mobile end-to-end framework.</p>
-          </li>
-          <li class="role">
-            <div class="role-head">
-              <h3>Lead QA Engineer &amp; Engineering Team Lead (Project Lead)</h3>
-              <span class="role-dates">Jan 2021 – Dec 2023</span>
-            </div>
-            <p class="role-meta">Fairventures Worldwide gGmbH (Fair Ventures Digital) · TREEO platform</p>
-            <!-- CONFIRMED by Peter 11 Oct 2026: 10-person team -->
-            <p>I was the sole QA engineer and also led the 10-person engineering team, across Germany, the Czech Republic and Uganda, for three years. I owned quality end to end through the platform's open-source release in May 2022, including CI/CD quality gates and Python, PyTest and Selenium regression automation.</p>
-          </li>
-          <li class="role">
-            <div class="role-head">
-              <h3>Quality Engineer (Part-time)</h3>
-              <span class="role-dates">Oct 2021 – Nov 2022</span>
-            </div>
-            <p class="role-meta">Viamo · alongside the Fair Ventures role</p>
-            <p>QA for a mobile information platform used across Africa (IVR, USSD, SMS): I ran the biweekly release process, built Cypress web UI automation, and validated data integrity with SQL in BigQuery.</p>
-          </li>
-        </ol>
-        <!-- Quartz & Binary Synergy: name and dates (Jun 2015 – early 2017) confirmed by Peter, 11 Oct 2026 17:36 EAT. -->
-        <p class="earlier">Earlier: Quality Engineer at awamo GmbH (2020), and co-founder of Quartz &amp; Binary Synergy (Jun 2015 – early 2017), where I did the product-owner and QA work.<!-- SLOT: Peter's 2017–2020 quality work. Add one short clause here once he confirms the details (role, organisation, dates). Nothing visible until then. --></p>
-      </div>
-    </section>
-
-    <!-- ===== FEATURED PROJECTS =====
-         Featured first: toolshop-quality-suite (current work). Then three compact cards: title, one-line description, 2-3 tags, link.
-         No metrics beyond the toolshop test count, no CI badges; links to the AI eval page and the public test report (added 12 Oct, pending approval). Sources: README.md fact table. -->
+    <!-- ===== FEATURED PROJECTS: copy from live index.html PROJECTS; CWR card from live cwr.html (fact-checked, a5f2c44) ===== -->
     <section id="projects" aria-labelledby="projects-title">
-      <div class="wrap">
-        <h2 id="projects-title">Featured projects</h2>
-        <!-- PROJECT (featured): toolshop-quality-suite (Peter's own repo) -->
-        <article class="card card--featured">
-          <p class="card-label">Current work</p>
-          <h3>toolshop-quality-suite</h3>
-          <p>API-first Playwright + TypeScript test framework for Toolshop, an open-source practice web shop: 29 tests, 20 of them straight against the REST API. UI journeys use the API for setup and cross-checks, and a GitHub Actions workflow runs strict TypeScript, ESLint and Prettier checks before the tests.</p>
-          <ul class="tags">
-            <li>Playwright</li><li>TypeScript</li><li>REST API</li><li>GitHub Actions</li>
-          </ul>
-          <p class="card-links">
-            <a href="https://github.com/Elpharz/toolshop-quality-suite">Code on GitHub<span class="visually-hidden"> (toolshop-quality-suite)</span></a>
-            <a href="ai-evals.html">AI eval results<span class="visually-hidden"> (toolshop-quality-suite LLM evals)</span></a>
-            <a href="/toolshop-quality-suite/">Test report<span class="visually-hidden"> (toolshop-quality-suite)</span></a>
-          </p>
-        </article>
-        <div class="cards">
-          <!-- PROJECT: Career War Room (private repo; case study approved by Peter 11 Oct 2026 20:42 EAT; synthetic data only) -->
-          <article class="card">
-            <h3>Career War Room: a human-governed multi-agent platform (private)</h3>
-            <p>Specialized AI agents share one PostgreSQL evidence ledger: agents propose, the database enforces the rules, and I approve anything consequential. Built with my team of AI agents and coding assistants. 112 core tests across 8 layers, a threat model and a real incident. Synthetic-data case study.</p>
-            <ul class="tags">
-              <li>AI agents</li><li>PostgreSQL</li><li>MCP</li>
-            </ul>
-            <p class="card-links"><a href="cwr.html">Read the case study<span class="visually-hidden"> (Career War Room)</span></a></p>
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" aria-hidden="true">01</p>
+          <h2 id="projects-title">Featured projects</h2>
+        </div>
+        <div class="grid">
+          <!-- PROJECT (featured): toolshop-quality-suite (Peter's own repo) -->
+          <article class="card card--featured col t-8 d-12">
+            <div class="card-top">
+              <p class="badge badge-ok"><span class="badge-dot" aria-hidden="true"></span>Current work</p>
+              <p class="card-meta">Playwright · TypeScript</p>
+            </div>
+            <div class="featured-body">
+              <div class="featured-text">
+                <h3>toolshop-quality-suite</h3>
+                <p>API-first Playwright + TypeScript test framework for Toolshop, an open-source practice web shop: 29 tests, 20 of them straight against the REST API. UI journeys use the API for setup and cross-checks, and a GitHub Actions workflow runs strict TypeScript, ESLint and Prettier checks before the tests.</p>
+                <ul class="tags">
+                  <li>Playwright</li><li>TypeScript</li><li>REST API</li><li>GitHub Actions</li>
+                </ul>
+                <p class="card-links">
+                  <a href="https://github.com/Elpharz/toolshop-quality-suite">Code on GitHub<span class="visually-hidden"> (toolshop-quality-suite)</span></a>
+                  <a href="ai-evals.html">AI eval results<span class="visually-hidden"> (toolshop-quality-suite LLM evals)</span></a>
+                  <a href="/toolshop-quality-suite/">Test report<span class="visually-hidden"> (toolshop-quality-suite)</span></a>
+                </p>
+              </div>
+              <!-- TERMINAL: illustrative only. Commands are the repo's own npm scripts (package.json on GitHub, checked 18 Oct 2026). No output, timings or pass claims. -->
+              <figure class="terminal">
+                <div class="terminal-bar" aria-hidden="true"><span class="tdot tdot-r"></span><span class="tdot tdot-y"></span><span class="tdot tdot-g"></span><span class="terminal-title">toolshop-quality-suite</span></div>
+                <pre class="terminal-body"><code><span class="t-c"># strict TypeScript, ESLint and Prettier</span>
+<span class="t-p">$</span> npm run check
+<span class="t-c"># run the Playwright tests</span>
+<span class="t-p">$</span> npm test</code></pre>
+                <figcaption>Illustrative commands from the repo’s scripts, no results shown. The latest results are in the <a href="/toolshop-quality-suite/">test report</a>.</figcaption>
+              </figure>
+            </div>
           </article>
+
+          <!-- PROJECT: Career War Room (private repo; wording from live cwr.html, approved 18 Oct 2026 21:38 EAT; synthetic data only) -->
+          <article class="card col t-8 d-7">
+            <div class="card-top">
+              <p class="badge">AI agents · synthetic-data case study</p>
+            </div>
+            <h3>Career War Room (private)</h3>
+            <p>A shared PostgreSQL evidence ledger and MCP server built for a team of AI agents, with human approval gates before consequential actions. Multi-agent coordination is <span class="status status-progress">In progress</span>.</p>
+            <p>Built with my team of AI agents and coding assistants. 113 test functions, a threat model and a real incident.</p>
+            <ul class="tags">
+              <li>Python</li><li>PostgreSQL</li><li>MCP</li><li>AI agents</li>
+            </ul>
+            <p class="card-links card-links--split"><span class="card-meta">Private repository</span><a href="cwr.html">Read the case study<span class="visually-hidden"> (Career War Room)</span></a></p>
+          </article>
+
           <!-- PROJECT: TREEO (upstream: fairventures-worldwide; Peter has forks. Not his codebase: credit the team) -->
-          <article class="card">
+          <article class="card col t-8 d-5">
+            <div class="card-top">
+              <p class="badge">Open source · May 2022</p>
+            </div>
             <h3>TREEO platform (open source)</h3>
             <p>Fairventures Worldwide's open-sourced TREEO platform, released in May 2022, where I was sole QA and led the engineering team. The code is the team's.</p>
             <ul class="tags">
@@ -233,8 +242,12 @@
               <a href="treeo.html">Read the case study<span class="visually-hidden"> (TREEO)</span></a>
             </p>
           </article>
-          <!-- PROJECT: QA automation take-home (2025). Peter's own repo; he asked to include it. Source note is in README.md -->
-          <article class="card">
+
+          <!-- PROJECT: QA automation take-home (2025). Peter's own repo; he asked to include it. -->
+          <article class="card col t-4 d-6">
+            <div class="card-top">
+              <p class="badge">2025</p>
+            </div>
             <h3>QA automation take-home (2025)</h3>
             <p>Playwright (Python) UI tests and Pytest API tests, with Allure reporting and environment configs.</p>
             <ul class="tags">
@@ -242,8 +255,12 @@
             </ul>
             <p class="card-links"><a href="https://github.com/Elpharz/wynn-qa-automation-assessment">Code on GitHub<span class="visually-hidden"> (QA automation take-home)</span></a></p>
           </article>
-          <!-- PROJECT: SmartCowProject (upstream: bugembeAndrew. ROLE CONFIRMED by Peter 11 Oct 2026 14:55 EAT: co-developer with Andrew Bugembe; commits are under Andrew's account) -->
-          <article class="card">
+
+          <!-- PROJECT: SmartCowProject (upstream: bugembeAndrew. ROLE CONFIRMED by Peter 11 Oct 2026 14:55 EAT: co-developer with Andrew Bugembe) -->
+          <article class="card col t-4 d-6">
+            <div class="card-top">
+              <p class="badge">2016 · co-developed</p>
+            </div>
             <h3>SmartCowProject</h3>
             <p>An early (2016) project I co-developed with Andrew Bugembe: a cattle-tracking Android app using GPS, Google Maps and geofencing. The repository is under Andrew's account.</p>
             <ul class="tags">
@@ -255,96 +272,170 @@
       </div>
     </section>
 
-    <!-- ===== SKILLS (cv-v2.md Skills section) =====
-         Each group: <dd><p class="skill-main">main skills</p></dd>. Optional second line inside the same dd:
-         <p class="skill-familiar"><span>Familiar with:</span> ...</p>. None used: Peter confirmed 11 Oct 17:24 EAT that every
-         current skill stays a main skill (including Kubernetes, Terraform, Jenkins, GraphQL, REST Assured, Java). -->
+    <!-- ===== EXPERIENCE HIGHLIGHTS: role text verbatim from live index.html; tags are short phrases lifted from each role's own text ===== -->
+    <section id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" aria-hidden="true">02</p>
+          <h2 id="experience-title">Experience highlights</h2>
+        </div>
+        <ol class="rail">
+          <li class="rail-item"><span class="pin" aria-hidden="true"></span>
+            <div class="card role">
+              <div class="role-head">
+                <h3>Senior QA Engineer (Supervisor Level)</h3>
+                <span class="role-dates">Jan 2026 – May 2026</span>
+              </div>
+              <p class="role-meta">ADWrap (adwrap.app)</p>
+              <p>I owned QA and test automation, from test strategy to release sign-off, and also oversaw a 3-person customer support team.</p>
+              <ul class="tags"><li>Test strategy</li><li>Release sign-off</li><li>Customer support team</li></ul>
+            </div>
+          </li>
+          <li class="rail-item"><span class="pin" aria-hidden="true"></span>
+            <div class="card role">
+              <div class="role-head">
+                <h3>Senior QA Engineer</h3>
+                <span class="role-dates">Feb 2024 – Jun 2025</span>
+              </div>
+              <p class="role-meta">Old Mutual East Africa · contract via GoodInfo</p>
+              <p>I owned release quality sign-off for financial-services apps in South Africa, Ghana, Nigeria and East Africa, built Playwright (TypeScript) end-to-end and API tests, and evaluated and implemented an Appium + BrowserStack mobile end-to-end framework.</p>
+              <ul class="tags"><li>Playwright (TypeScript)</li><li>API tests</li><li>Appium + BrowserStack</li><li>Release sign-off</li></ul>
+            </div>
+          </li>
+          <li class="rail-item"><span class="pin" aria-hidden="true"></span>
+            <div class="card role">
+              <div class="role-head">
+                <h3>Lead QA Engineer &amp; Engineering Team Lead (Project Lead)</h3>
+                <span class="role-dates">Jan 2021 – Dec 2023</span>
+              </div>
+              <p class="role-meta">Fairventures Worldwide gGmbH (Fair Ventures Digital) · TREEO platform</p>
+              <!-- CONFIRMED by Peter 11 Oct 2026: 10-person team -->
+              <p>I was the sole QA engineer and also led the 10-person engineering team, across Germany, the Czech Republic and Uganda, for three years. I owned quality end to end through the platform's open-source release in May 2022, including CI/CD quality gates and Python, PyTest and Selenium regression automation.</p>
+              <ul class="tags"><li>CI/CD quality gates</li><li>Python</li><li>PyTest</li><li>Selenium</li><li>Open-source release</li></ul>
+            </div>
+          </li>
+          <li class="rail-item"><span class="pin" aria-hidden="true"></span>
+            <div class="card role">
+              <div class="role-head">
+                <h3>Quality Engineer (Part-time)</h3>
+                <span class="role-dates">Oct 2021 – Nov 2022</span>
+              </div>
+              <p class="role-meta">Viamo · alongside the Fair Ventures role</p>
+              <p>QA for a mobile information platform used across Africa (IVR, USSD, SMS): I ran the biweekly release process, built Cypress web UI automation, and validated data integrity with SQL in BigQuery.</p>
+              <ul class="tags"><li>Cypress</li><li>SQL (BigQuery)</li><li>IVR, USSD, SMS</li></ul>
+            </div>
+          </li>
+          <li class="rail-item rail-item--muted"><span class="pin" aria-hidden="true"></span>
+            <!-- Quartz & Binary Synergy: name and dates (Jun 2015 – early 2017) confirmed by Peter, 11 Oct 2026 17:36 EAT. -->
+            <p class="earlier">Earlier: Quality Engineer at awamo GmbH (2020), and co-founder of Quartz &amp; Binary Synergy (Jun 2015 – early 2017), where I did the product-owner and QA work.<!-- SLOT: Peter's 2017–2020 quality work. Nothing visible until he confirms the details. --></p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS: every item verbatim from live index.html SKILLS; live "Quality" and "Leadership" groups merged into one card to make 6 groups ===== -->
     <section id="skills" aria-labelledby="skills-title">
-      <div class="wrap">
-        <h2 id="skills-title">Skills</h2>
-        <dl class="skills">
-          <dt>Automation</dt>
-          <dd><p class="skill-main">Playwright, Selenium WebDriver, Cypress, Appium (XCUITest, Espresso), BrowserStack, PyTest; TypeScript, JavaScript, Java, Python, SQL (BigQuery)</p></dd>
-          <dt>API</dt>
-          <dd><p class="skill-main">REST APIs (Postman, REST Assured), GraphQL</p></dd>
-          <dt>CI/CD</dt>
-          <dd><p class="skill-main">GitHub Actions, Jenkins, Bitbucket Pipelines, Docker, Kubernetes, Terraform</p></dd>
-          <dt>Quality</dt>
-          <dd><p class="skill-main">Test strategy, risk-based testing, E2E and mobile automation, regression, exploratory testing, UAT, release go/no-go sign-off, defect triage</p></dd>
-          <dt>AI &amp; agents</dt>
-          <dd><p class="skill-main">MCP (Model Context Protocol) servers, Agentic system design</p></dd>
-          <dt>Tools</dt>
-          <dd><p class="skill-main">Jira, Xray, TestRail, ServiceNow, Bitbucket, Git, Agile/Scrum</p></dd>
-          <dt>Leadership</dt>
-          <dd><p class="skill-main">Led a 10-person cross-functional engineering team (3 years), people leadership, delivery planning and release decisions, distributed teams across time zones, QA playbooks and standards; Project Management Professional (PMP) exam prep training, 35 contact hours, Uganda Management Institute (June 2025)</p></dd>
-        </dl>
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" aria-hidden="true">03</p>
+          <h2 id="skills-title">Skills</h2>
+        </div>
+        <div class="grid">
+          <div class="card skill col t-4 d-4">
+            <h3>Automation</h3>
+            <ul class="tags"><li>Playwright</li><li>Selenium WebDriver</li><li>Cypress</li><li>Appium (XCUITest, Espresso)</li><li>BrowserStack</li><li>PyTest</li><li>TypeScript</li><li>JavaScript</li><li>Java</li><li>Python</li><li>SQL (BigQuery)</li></ul>
+          </div>
+          <div class="card skill col t-4 d-4">
+            <h3>API</h3>
+            <ul class="tags"><li>REST APIs</li><li>Postman</li><li>REST Assured</li><li>GraphQL</li></ul>
+          </div>
+          <div class="card skill col t-4 d-4">
+            <h3>CI/CD</h3>
+            <ul class="tags"><li>GitHub Actions</li><li>Jenkins</li><li>Bitbucket Pipelines</li><li>Docker</li><li>Kubernetes</li><li>Terraform</li></ul>
+          </div>
+          <div class="card skill col t-4 d-4">
+            <h3>Quality and leadership</h3>
+            <ul class="tags"><li>Test strategy</li><li>Risk-based testing</li><li>E2E and mobile automation</li><li>Regression</li><li>Exploratory testing</li><li>UAT</li><li>Release go/no-go sign-off</li><li>Defect triage</li><li>Led a 10-person cross-functional engineering team (3 years)</li><li>People leadership</li><li>Delivery planning and release decisions</li><li>Distributed teams across time zones</li><li>QA playbooks and standards</li></ul>
+          </div>
+          <div class="card skill col t-4 d-4">
+            <h3>AI &amp; agents</h3>
+            <ul class="tags"><li>MCP (Model Context Protocol) servers</li><li>Agentic system design</li></ul>
+          </div>
+          <div class="card skill col t-4 d-4">
+            <h3>Tools</h3>
+            <ul class="tags"><li>Jira</li><li>Xray</li><li>TestRail</li><li>ServiceNow</li><li>Bitbucket</li><li>Git</li><li>Agile/Scrum</li></ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- ===== CERTIFICATIONS (verified against certificate files in /workspace/uploads/certs/, 11 Oct 2026; files are NOT on the site) ===== -->
-    <section id="certifications" aria-labelledby="certifications-title">
-      <div class="wrap">
-        <h2 id="certifications-title">Certifications and training</h2>
-        <ul class="creds">
-          <li>
-            <h3>Software Testing Management (STV1.2x)</h3>
-            <p>University System of Maryland (USMx) via edX · verified certificate · April 2020 · <a href="https://courses.edx.org/certificates/c401828ca9674441b2a8decd08ea7416">View certificate<span class="visually-hidden"> for Software Testing Management on edX</span></a></p>
-          </li>
-          <li>
-            <!-- Verified: Google Skills email "You've started Professional Agentic Architect Certification!" (noreply@skills.google, 13 Sep 2026). In progress only. -->
-            <h3>Professional Agentic Architect Certification</h3>
-            <p>Google Skills (Google) · in progress, started September 2026</p>
-          </li>
-          <li>
-            <h3>Project Management Professional (PMP) Exam Prep Training</h3>
-            <p>Uganda Management Institute · 35 contact hours · June 2025</p>
-          </li>
-        </ul>
+    <!-- ===== CERTIFICATIONS / EDUCATION / COMMUNITY: verbatim from live index.html (three sections shown as three columns) ===== -->
+    <section id="credentials" aria-labelledby="credentials-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" aria-hidden="true">04</p>
+          <h2 id="credentials-title">Certifications, education and community</h2>
+        </div>
+        <div class="grid">
+          <div class="card col t-8 d-4" id="certifications">
+            <h3 class="col-title">Certifications and training</h3>
+            <ul class="creds">
+              <li>
+                <h4>Software Testing Management (STV1.2x)</h4>
+                <p>University System of Maryland (USMx) via edX · verified certificate · April 2020 · <a href="https://courses.edx.org/certificates/c401828ca9674441b2a8decd08ea7416">View certificate<span class="visually-hidden"> for Software Testing Management on edX</span></a></p>
+              </li>
+              <li>
+                <h4>Professional Agentic Architect Certification</h4>
+                <p>Google Skills (Google) · in progress, started September 2026</p>
+              </li>
+              <li>
+                <h4>Project Management Professional (PMP) Exam Prep Training</h4>
+                <p>Uganda Management Institute · 35 contact hours · June 2025</p>
+              </li>
+            </ul>
+          </div>
+          <div class="card col t-8 d-4" id="education">
+            <h3 class="col-title">Education</h3>
+            <ul class="creds">
+              <li>
+                <h4>BSc Software Engineering</h4>
+                <p>Makerere University · <span class="mono">2012–2017</span></p>
+              </li>
+            </ul>
+          </div>
+          <div class="card col t-8 d-4" id="community">
+            <h3 class="col-title">Community and hackathons</h3>
+            <p><strong>Major League Hacking (MLH) Global Hack Week</strong>: a regular participant since April 2025.</p>
+            <ul class="plain-list">
+              <li><strong>API Week:</strong> April 2025 and November 2025</li>
+              <li><strong>Open Source Week:</strong> May 2025 and October 2025</li>
+              <li><strong>Data Week (September 2026), training sessions attended:</strong> modern search built directly in Postgres, DuckDB in the browser with WebAssembly, and cleaning, analysing and visualising a dataset.</li>
+              <li><strong>Hacktoberfest 2026, participating:</strong> Global Hack Week (October) and two in-person Hack Days in Kampala (17 Oct with GDG on Campus Makerere University, and 24 Oct with ResNet Academy).</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- ===== EDUCATION (N&B "Education"; year follows cv-v2.md, not N&B's 2012–2017) ===== -->
-    <section id="education" aria-labelledby="education-title">
-      <div class="wrap">
-        <h2 id="education-title">Education</h2>
-        <p class="single-line"><strong>BSc Software Engineering</strong>, Makerere University, 2012–2017</p>
-      </div>
-    </section>
-
-    <!-- ===== COMMUNITY AND HACKATHONS (N&B copy; verified against MLH registration/check-in emails in mugipete1@gmail.com) ===== -->
-    <section id="community" aria-labelledby="community-title">
-      <div class="wrap">
-        <h2 id="community-title">Community and hackathons</h2>
-        <p><strong>Major League Hacking (MLH) Global Hack Week</strong>: a regular participant since April 2025.</p>
-        <ul class="plain-list">
-          <li><strong>API Week:</strong> April 2025 and November 2025</li>
-          <li><strong>Open Source Week:</strong> May 2025 and October 2025</li>
-          <li><strong>Data Week (September 2026), training sessions attended:</strong> modern search built directly in Postgres, DuckDB in the browser with WebAssembly, and cleaning, analysing and visualising a dataset.</li>
-          <li><strong>Hacktoberfest 2026, participating:</strong> Global Hack Week (October) and two in-person Hack Days in Kampala (17 Oct with GDG on Campus Makerere University, and 24 Oct with ResNet Academy).</li>
-          <!-- SLOT: Hack Day output. After 17 Oct (GDG on Campus Makerere) and 24 Oct (ResNet Academy), add ONE line per event with what Peter actually built or contributed (repo/PR link if public). Until then, leave this slot empty.
-          <li><strong>Hack Day Kampala, 17 Oct 2026:</strong> [what I built or contributed, link]</li>
-          <li><strong>Hack Day Kampala, 24 Oct 2026:</strong> [what I built or contributed, link]</li>
-          -->
-        </ul>
-      </div>
-    </section>
-
-    <!-- ===== CONTACT (copy: N&B "Contact") ===== -->
+    <!-- ===== CONTACT (copy: live index.html CONTACT) ===== -->
     <section id="contact" aria-labelledby="contact-title">
-      <div class="wrap">
-        <h2 id="contact-title">Contact</h2>
-        <p>Open to QA, test-automation and forward-deployed roles, remote or in Nairobi and Kampala.</p>
-        <ul class="contact-list">
-          <li><span>Email</span> <a href="mailto:mugipete1@gmail.com">mugipete1@gmail.com</a></li>
-          <li><span>LinkedIn</span> <a href="https://www.linkedin.com/in/petermugisha" rel="me">linkedin.com/in/petermugisha</a></li>
-          <li><span>GitHub</span> <a href="https://github.com/Elpharz" rel="me">github.com/Elpharz</a></li>
-          <li><span>Location</span> Kampala, Uganda</li>
-        </ul>
+      <div class="container">
+        <div class="contact-block">
+          <p class="kicker" aria-hidden="true">05</p>
+          <h2 id="contact-title">Contact</h2>
+          <p class="contact-intro">Open to QA, test-automation and forward-deployed roles, remote or in Nairobi and Kampala.</p>
+          <ul class="channels grid">
+            <li class="col t-4 d-3"><span class="channel-label">Email</span> <a href="mailto:mugipete1@gmail.com">mugipete1@gmail.com</a></li>
+            <li class="col t-4 d-3"><span class="channel-label">LinkedIn</span> <a href="https://www.linkedin.com/in/petermugisha" rel="me">linkedin.com/in/petermugisha</a></li>
+            <li class="col t-4 d-3"><span class="channel-label">GitHub</span> <a href="https://github.com/Elpharz" rel="me">github.com/Elpharz</a></li>
+            <li class="col t-4 d-3"><span class="channel-label">Location</span> Kampala, Uganda</li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- ===== FOOTER (verbatim from live) ===== -->
   <footer class="site-footer">
     <div class="wrap">
       <p>© 2026 Peter Mugisha. Plain HTML and CSS. Cookie-free visit counts via Cloudflare Web Analytics.</p>
