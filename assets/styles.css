@@ -420,3 +420,6 @@ section[id], div[id] { scroll-margin-top: 5.5rem; }
 .footer-links { display: flex; gap: 1.25rem; list-style: none; margin: 0; padding: 0; font: 500 0.8125rem/1.4 var(--mono); }
 .footer-links a { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.3rem 0; color: var(--muted); text-decoration: none; }
 .footer-links a:hover { color: var(--teal-text); }
+
+/* Approved 22 Nov 2026: Delivery and team leadership card above the Experience rail */
+.lead-card { margin-bottom: 1.75rem; }
