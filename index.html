@@ -117,6 +117,7 @@
       <nav class="site-nav" aria-label="Sections">
         <ul>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#ai-safety">AI safety</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#certifications">Certifications</a></li>
@@ -280,12 +281,84 @@
       </div>
     </section>
 
+    <!-- ===== AI EVALUATION AND SAFETY (approved by Peter 22 Nov 2026). Sources: eval figures verbatim from live ai-evals.html (approved 12 Oct 2026; evidence/llm-evals-results-2026-10-12.md, llm-evals-portfolio-data-2026-10-12.json); ISOC certificate as in Certifications; ISOC Pre-Fellowship enrolment 9 Nov 2026 (career-intel/metrics/event-to-update.csv, job-discovery/fellowships/drafts/isoc-2027-security-application.md); OWASP ZAP = approved claim CLM-057, wording as on the ADWrap card ===== -->
+    <section id="ai-safety" aria-labelledby="ai-safety-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker" aria-hidden="true">02</p>
+          <h2 id="ai-safety-title">AI evaluation and safety</h2>
+        </div>
+        <div class="grid">
+          <article class="card col t-4 d-6">
+            <div class="card-top">
+              <p class="badge"><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v16a2 2 0 0 0 2 2h16"/> <path d="M18 17V9"/> <path d="M13 17V5"/> <path d="M8 17v-3"/></svg>LLM evals · run on 12 Oct 2026</p>
+            </div>
+            <h3>Promptfoo LLM eval suite</h3>
+            <p>A small Promptfoo eval suite in GitHub Actions: 23 cases, deterministic checks and offline controls. In its first real run, <code>gemini-3.5-flash-lite</code> passed 22 of 23 cases.</p>
+            <p class="card-meta">One run, one repeat, n = 23. This is a starting point, not a benchmark.</p>
+            <ul class="tags">
+              <li>Promptfoo</li><li>Grounding</li><li>Hallucination</li><li>Refusal</li><li>Prompt injection</li>
+            </ul>
+            <p class="card-links"><a href="ai-evals.html">See the eval results<span class="visually-hidden"> (AI eval results page)</span><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/> <path d="m12 5 7 7-7 7"/></svg></a></p>
+          </article>
+          <article class="card col t-4 d-6">
+            <div class="card-top">
+              <p class="badge badge-ok"><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/> <circle cx="12" cy="8" r="6"/></svg>Certificate · October 2026</p>
+            </div>
+            <h3>Introduction to Online Trust and Safety</h3>
+            <p>Internet Society certificate.</p>
+            <p class="card-links"><a href="https://certificates.isoc.org/9ef034f8-899c-414a-bc25-288ef687d140"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 3h6v6"/> <path d="M10 14 21 3"/> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>View certificate<span class="visually-hidden"> for Introduction to Online Trust and Safety from the Internet Society</span></a></p>
+          </article>
+          <article class="card col t-4 d-6">
+            <div class="card-top">
+              <p class="badge"><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/> <path d="M22 10v6"/> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>Training · enrolled November 2026</p>
+              <span class="status status-progress">In progress</span>
+            </div>
+            <h3>ISOC Pre-Fellowship Training</h3>
+            <p>Internet Society · Internet Safety and Security track, Online Trust and Safety sub-track.</p>
+          </article>
+          <article class="card col t-4 d-6">
+            <div class="card-top">
+              <p class="badge"><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/> <path d="m9 12 2 2 4-4"/></svg>Security testing · ADWrap</p>
+            </div>
+            <h3>OWASP ZAP security testing</h3>
+            <p>At ADWrap, I ran OWASP ZAP scans to test for OWASP Top 10 issues, and handled the resulting reports and incidents.</p>
+            <ul class="tags">
+              <li>OWASP ZAP</li><li>Security testing (OWASP Top 10)</li>
+            </ul>
+            <p class="card-links"><a href="#experience">See the ADWrap role<svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/> <path d="m12 5 7 7-7 7"/></svg></a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== EXPERIENCE HIGHLIGHTS: role text verbatim from live index.html; tags are short phrases lifted from each role's own text ===== -->
     <section id="experience" aria-labelledby="experience-title">
       <div class="container">
         <div class="section-head">
-          <p class="kicker" aria-hidden="true">02</p>
+          <p class="kicker" aria-hidden="true">03</p>
           <h2 id="experience-title">Experience highlights</h2>
+        </div>
+        <!-- DELIVERY AND TEAM LEADERSHIP (approved by Peter 22 Nov 2026). Pula: approved wording from CV & LinkedIn (cv-review/linkedin-v3.md pending block, lines 174-176); one million data points is a TARGET only. TREEO: wording from the Fairventures role card below (confirmed 11 Oct 2026). Pixan: approved claim CLM-029 / cv-v2.md line 120. -->
+        <div class="card lead-card">
+          <h3 class="col-title icon-heading"><svg class="icon icon-accent" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/> <path d="M16 3.128a4 4 0 0 1 0 7.744"/> <path d="M22 21v-2a4 4 0 0 0-3-3.87"/> <circle cx="9" cy="7" r="4"/></svg>Delivery and team leadership</h3>
+          <ul class="creds">
+            <li>
+              <h4>Team Lead, DQC (Data Quality Check) team</h4>
+              <p>Pula · Kampala, Uganda · <span class="mono">Oct 2026 – Present</span></p>
+              <p>I lead the DQC team on the MAAIF Phase 3 coffee-farmer registration project, a Uganda government programme with a target of one million data points. My job is to keep the team focused on quality and accuracy.</p>
+            </li>
+            <li>
+              <h4>Lead QA Engineer &amp; Engineering Team Lead (Project Lead)</h4>
+              <p>Fairventures Worldwide · TREEO platform · <span class="mono">Jan 2021 – Dec 2023</span></p>
+              <p>I was the sole QA engineer and also led the 10-person engineering team, across Germany, the Czech Republic and Uganda, for three years.</p>
+            </li>
+            <li>
+              <h4>Product Manager</h4>
+              <p>Pixan Corporation · <span class="mono">2017 – 2019</span></p>
+              <p>I led product roadmaps and go-to-market strategy; this product-side view now drives testable acceptance criteria and shift-left QA.</p>
+            </li>
+          </ul>
         </div>
         <ol class="rail">
           <li class="rail-item"><span class="pin" aria-hidden="true"></span>
@@ -347,7 +420,7 @@
     <section id="skills" aria-labelledby="skills-title">
       <div class="container">
         <div class="section-head">
-          <p class="kicker" aria-hidden="true">03</p>
+          <p class="kicker" aria-hidden="true">04</p>
           <h2 id="skills-title">Skills</h2>
         </div>
         <div class="grid">
@@ -383,7 +456,7 @@
     <section id="credentials" aria-labelledby="credentials-title">
       <div class="container">
         <div class="section-head">
-          <p class="kicker" aria-hidden="true">04</p>
+          <p class="kicker" aria-hidden="true">05</p>
           <h2 id="credentials-title">Certifications, education and community</h2>
         </div>
         <div class="grid">
@@ -435,7 +508,7 @@
     <section id="contact" aria-labelledby="contact-title">
       <div class="container">
         <div class="contact-block">
-          <p class="kicker" aria-hidden="true">05</p>
+          <p class="kicker" aria-hidden="true">06</p>
           <h2 id="contact-title">Contact</h2>
           <p class="contact-intro">Open to QA, test-automation and forward-deployed roles, remote or in Nairobi and Kampala.</p>
           <ul class="channels grid">
